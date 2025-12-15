@@ -24,7 +24,7 @@ export default function Home() {
 
           {/* Content */}
           <div className="container mx-auto px-4 py-12 md:py-20 relative z-10">
-            <div className="max-w-3xl">
+            <div className="max-w-4xl mx-auto text-center">
               {/* Badge */}
               <div className="inline-flex items-center bg-emerald-700 text-white px-4 py-2 rounded-full text-sm font-semibold mb-6 shadow-lg">
                 <span className="w-2 h-2 bg-white rounded-full mr-2 animate-pulse"></span>
@@ -41,7 +41,7 @@ export default function Home() {
                 প্রয়োজনীয় দৈনন্দিন মাসনুন দোয়া
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-4 mb-12">
+              <div className="flex flex-col sm:flex-row gap-4 mb-12 justify-center">
                 <Link href="/register" className="bg-emerald-700 hover:bg-emerald-800 text-white px-8 py-4 rounded-lg text-lg font-semibold shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-1 text-center">
                   শেখা শুরু করুন
                 </Link>
@@ -51,7 +51,7 @@ export default function Home() {
               </div>
 
               {/* Stats */}
-              <div className="grid grid-cols-3 gap-4 max-w-2xl">
+              <div className="grid grid-cols-3 gap-4 max-w-2xl mx-auto">
                 <div className="bg-white/70 backdrop-blur-sm rounded-xl p-4 shadow-md">
                   <p className="text-3xl md:text-4xl font-bold text-emerald-700 mb-1">১৬</p>
                   <p className="text-sm md:text-base text-gray-700">ক্লাস</p>
