@@ -86,7 +86,7 @@ export default function TeachersPage() {
                   <h3 className="text-3xl font-bold text-gray-900 mb-4">{teachers[0].name}</h3>
                   <p className="text-gray-700 mb-6 text-lg leading-relaxed">{teachers[0].description}</p>
                   
-                  <div className="space-y-4">
+                  <div className="space-y-4 mb-6">
                     <h4 className="font-bold text-gray-900 text-lg">যোগ্যতা ও দক্ষতা:</h4>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                       {teachers[0].qualifications.map((qual, idx) => (
@@ -97,6 +97,23 @@ export default function TeachersPage() {
                           <span className="text-gray-800 font-medium">{qual}</span>
                         </div>
                       ))}
+                    </div>
+                  </div>
+
+                  {/* Certificate */}
+                  <div className="mt-6 border-t pt-6">
+                    <h4 className="font-bold text-gray-900 text-lg mb-4 flex items-center gap-2">
+                      <span>📜</span>
+                      সার্টিফিকেট
+                    </h4>
+                    <div className="rounded-lg overflow-hidden shadow-lg border-2 border-emerald-200">
+                      <Image
+                        src="/images/certificate.jpg"
+                        alt="সালেক বিন হোসেন - সার্টিফিকেট"
+                        width={800}
+                        height={600}
+                        className="w-full h-auto object-contain bg-gray-50"
+                      />
                     </div>
                   </div>
                 </div>
