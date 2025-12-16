@@ -123,7 +123,7 @@ export default function ContactPage() {
                 </div>
                 <div className="border-l-4 border-emerald-700 pl-6 py-2">
                   <h4 className="font-bold text-gray-900 mb-2">কোর্স কখন শুরু হবে?</h4>
-                  <p className="text-gray-700">রজব মাসের প্রথম জুমুয়ার দিন থেকে</p>
+                  <p className="text-gray-700">রজব মাসের প্রথম জুমুআর(২৬ ডিসেম্বর, ২০২৫) দিন থেকে</p>
                 </div>
               </div>
             </div>

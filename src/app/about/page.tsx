@@ -22,7 +22,7 @@ export default function AboutPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12 mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">কোর্সের উদ্দেশ্য</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">কোর্স কারিকুলাম</h2>
               <div className="prose prose-lg text-gray-700">
                 <p className="mb-4">
                   রমজান মাস আসার আগেই নিজেকে প্রস্তুত করুন। এই কোর্সের মাধ্যমে আপনি শিখবেন:
@@ -55,7 +55,7 @@ export default function AboutPage() {
                   <span className="line-through opacity-60">২৯৯</span> <span className="text-white">১৯৯</span> টাকা/মাস
                 </p>
               </div>
-              <p className="text-xl md:text-2xl text-amber-50 mb-4">মাত্র ১৯৯ টাকা মাসিক ফি তে সম্পূর্ণ কোর্স</p>
+              <p className="text-xl md:text-2xl text-amber-50 mb-4">মাত্র ১৯৯ টাকা মাসিক ফি-তে সম্পূর্ণ কোর্স</p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <div className="flex items-center gap-2">
                   <span className="text-2xl">🏆</span>
@@ -63,7 +63,7 @@ export default function AboutPage() {
                 </div>
                 <div className="flex items-center gap-2">
                   <span className="text-2xl">💰</span>
-                  <span className="text-amber-50">ফি ফেরতের সুযোগ</span>
+                  <span className="text-amber-50">কোর্স ফি ফেরতের সুযোগ</span>
                 </div>
               </div>
             </div>
@@ -98,7 +98,7 @@ export default function AboutPage() {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-gray-900 mb-2">চূড়ান্ত পরীক্ষা</h3>
-                    <p className="text-gray-700">১৫তম ক্লাসে সম্পূর্ণ কোর্সের পরীক্ষা ও সার্টিফিকেট প্রদান</p>
+                    <p className="text-gray-700">১৬তম ক্লাসে সম্পূর্ণ কোর্সের পরীক্ষা ও সার্টিফিকেট প্রদান</p>
                   </div>
                 </div>
               </div>
@@ -148,11 +148,7 @@ export default function AboutPage() {
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
                   <span className="text-emerald-600 text-2xl">✓</span>
-                  <p className="text-gray-700 text-lg">অভিজ্ঞ হাফেজ ও মাওলানাদের সরাসরি শিক্ষা</p>
-                </div>
-                <div className="flex items-start gap-3">
-                  <span className="text-emerald-600 text-2xl">✓</span>
-                  <p className="text-gray-700 text-lg">সঠিক তাজবীদ ও উচ্চারণ শিক্ষা</p>
+                  <p className="text-gray-700 text-lg">থ্রিডি ডায়াগ্রামের মাধ্যমে সঠিক তাজবীদ ও উচ্চারণ শিক্ষা</p>
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="text-emerald-600 text-2xl">✓</span>

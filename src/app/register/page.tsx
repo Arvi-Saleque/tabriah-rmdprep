@@ -449,24 +449,6 @@ export default function RegisterPage() {
 
                     <div>
                       <label className="block text-gray-900 font-semibold mb-2">
-                        কুরআন পড়ার দক্ষতা <span className="text-red-500">*</span>
-                      </label>
-                      <select
-                        name="courseSource"
-                        value={formData.courseSource}
-                        onChange={handleChange}
-                        className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-emerald-700 focus:ring-2 focus:ring-emerald-200 outline-none transition-all"
-                        required
-                      >
-                        <option value="">নির্বাচন করুন</option>
-                        <option value="beginner">শুরু পর্যায় (হরফ/মাখরাজ শিখছি)</option>
-                        <option value="intermediate">মধ্যম পর্যায় (সূরা পড়তে পারি)</option>
-                        <option value="advanced">উন্নত পর্যায় (নামাজ পড়তে পারি)</option>
-                      </select>
-                    </div>
-
-                    <div>
-                      <label className="block text-gray-900 font-semibold mb-2">
                         কেন এই কোর্সে যোগ দিতে চান?
                       </label>
                       <textarea
