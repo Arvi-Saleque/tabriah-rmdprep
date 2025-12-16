@@ -74,10 +74,10 @@ export default function AboutPage() {
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 bg-emerald-700 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <span className="text-white text-xl font-bold">১৬</span>
+                    <span className="text-white text-xl font-bold">১৫</span>
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">মোট ১৬টি ক্লাস</h3>
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">মোট ১৫টি ক্লাস</h3>
                     <p className="text-gray-700">২ মাস (রজব ও শাবান) ধরে প্রতি শুক্রবার ও শনিবার ক্লাস অনুষ্ঠিত হবে</p>
                   </div>
                 </div>
@@ -98,7 +98,7 @@ export default function AboutPage() {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-gray-900 mb-2">চূড়ান্ত পরীক্ষা</h3>
-                    <p className="text-gray-700">১৬তম ক্লাসে সম্পূর্ণ কোর্সের পরীক্ষা ও সার্টিফিকেট প্রদান</p>
+                    <p className="text-gray-700">১৫তম ক্লাসে সম্পূর্ণ কোর্সের পরীক্ষা ও সার্টিফিকেট প্রদান</p>
                   </div>
                 </div>
               </div>

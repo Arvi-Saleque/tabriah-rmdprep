@@ -19,7 +19,7 @@ const notoNaskhArabic = Noto_Naskh_Arabic({
 
 export const metadata: Metadata = {
   title: "রমজানের প্রস্তুতি | Ramadan Preparation Course",
-  description: "২ মাসে ১৬ ক্লাস - পরিপূর্ণ নামাজ, বেসিক ১১ টা সূরা এবং দৈনন্দিন মাসনূন আমল শিখুন",
+  description: "২ মাসে ১৫ ক্লাস - পরিপূর্ণ নামাজ, বেসিক ১১ টা সূরা এবং দৈনন্দিন মাসনূন আমল শিখুন",
   icons: {
     icon: '/images/logo.png',
     apple: '/images/logo.png',

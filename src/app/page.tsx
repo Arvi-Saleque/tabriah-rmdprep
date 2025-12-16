@@ -53,7 +53,7 @@ export default function Home() {
               {/* Stats */}
               <div className="grid grid-cols-3 gap-4 max-w-2xl mx-auto">
                 <div className="bg-white/70 backdrop-blur-sm rounded-xl p-4 shadow-md">
-                  <p className="text-3xl md:text-4xl font-bold text-emerald-700 mb-1">১৬</p>
+                  <p className="text-3xl md:text-4xl font-bold text-emerald-700 mb-1">১৫</p>
                   <p className="text-sm md:text-base text-gray-700">ক্লাস</p>
                 </div>
                 <div className="bg-white/70 backdrop-blur-sm rounded-xl p-4 shadow-md">

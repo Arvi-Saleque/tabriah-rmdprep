@@ -67,11 +67,11 @@ export default function SyllabusPage() {
           <div className="text-center text-white max-w-3xl mx-auto">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">কোর্স সিলেবাস</h1>
             <p className="text-lg md:text-xl text-emerald-100">
-              ১৬টি ক্লাসে সম্পূর্ণ নামাজ, সূরা এবং দৈনন্দিন দোয়া শিখুন
+              ১৫টি ক্লাসে সম্পূর্ণ নামাজ, সূরা এবং দৈনন্দিন দোয়া শিখুন
             </p>
             <div className="flex justify-center gap-6 mt-6">
               <div className="text-center">
-                <p className="text-3xl font-bold">১৬</p>
+                <p className="text-3xl font-bold">১৫</p>
                 <p className="text-emerald-200 text-sm">ক্লাস</p>
               </div>
               <div className="text-center">
