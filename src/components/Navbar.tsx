@@ -137,17 +137,14 @@ export default function Navbar() {
                 setIsOpen(false);
               }}
             >
-              রেজিস্ট্রেশন 
-              className="block text-gray-700 hover:text-emerald-700 font-medium py-2 px-4 rounded-lg hover:bg-gray-50 transition-colors"
-              onClick={() => setIsOpen(false)}
-            >
-              সিলেবাস
+              রেজিস্ট্রেশন
             </Link>
-            <Link 
-              href="/teachers" 
-              className="block text-gray-700 hover:text-emerald-700 font-medium py-2 px-4 rounded-lg hover:bg-gray-50 transition-colors"
-              onClick={() => setIsOpen(false)}
-            >
+          </div>
+        )}
+      </div>
+    </nav>
+  );
+}
               শিক্ষকবৃন্দ
             </Link>
             <Link 
