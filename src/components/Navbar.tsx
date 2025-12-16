@@ -145,32 +145,3 @@ export default function Navbar() {
     </nav>
   );
 }
-              শিক্ষকবৃন্দ
-            </Link>
-            <Link 
-              href="/about" 
-              className="block text-gray-700 hover:text-emerald-700 font-medium py-2 px-4 rounded-lg hover:bg-gray-50 transition-colors"
-              onClick={() => setIsOpen(false)}
-            >
-              সম্পর্কে
-            </Link>
-            <Link 
-              href="/contact" 
-              className="block text-gray-700 hover:text-emerald-700 font-medium py-2 px-4 rounded-lg hover:bg-gray-50 transition-colors"
-              onClick={() => setIsOpen(false)}
-            >
-              যোগাযোগ
-            </Link>
-            <Link 
-              href="/register" 
-              className="block bg-emerald-700 hover:bg-emerald-800 text-white text-center py-2.5 px-4 rounded-lg font-semibold transition-all shadow-md"
-              onClick={() => setIsOpen(false)}
-            >
-              রেজিস্ট্রেশন
-            </Link>
-          </div>
-        )}
-      </div>
-    </nav>
-  );
-}
