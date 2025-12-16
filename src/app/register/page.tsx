@@ -2,6 +2,7 @@
 
 import Navbar from '@/components/Navbar';
 import { useState } from 'react';
+import { trackFormStep, trackFormSubmit, trackButtonClick } from '@/lib/analytics';
 
 interface FormData {
   // Step 1
@@ -80,14 +81,17 @@ export default function RegisterPage() {
 
   const handleNext = () => {
     if (currentStep === 1 && validateStep1()) {
+      trackFormStep(1, 'next');
       setCurrentStep(2);
     } else if (currentStep === 2 && validateStep2()) {
+      trackFormStep(2, 'next');
       setCurrentStep(3);
     }
   };
 
   const handleBack = () => {
     setError('');
+    trackFormStep(currentStep, 'back');
     setCurrentStep(prev => prev - 1);
   };
 
@@ -97,6 +101,9 @@ export default function RegisterPage() {
     setError('');
 
     try {
+      // Track form submission attempt
+      trackFormSubmit('Registration Complete', 3);
+
       const response = await fetch('/api/registrations', {
         method: 'POST',
         headers: {
@@ -120,6 +127,7 @@ export default function RegisterPage() {
       const result = await response.json();
 
       if (result.success) {
+        trackFormSubmit('Registration Success', 3);
         setSubmitted(true);
       } else {
         setError('রেজিস্ট্রেশন ব্যর্থ হয়েছে। আবার চেষ্টা করুন।');

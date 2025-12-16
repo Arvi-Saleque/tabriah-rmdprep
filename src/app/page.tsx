@@ -1,6 +1,9 @@
+'use client';
+
 import Navbar from '@/components/Navbar';
 import Image from 'next/image';
 import Link from 'next/link';
+import { trackButtonClick, trackNavigation } from '@/lib/analytics';
 
 export default function Home() {
   return (
@@ -42,10 +45,24 @@ export default function Home() {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 mb-12 justify-center">
-                <Link href="/register" className="bg-emerald-700 hover:bg-emerald-800 text-white px-8 py-4 rounded-lg text-lg font-semibold shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-1 text-center">
+                <Link 
+                  href="/register" 
+                  onClick={() => {
+                    trackButtonClick('শেখা শুরু করুন', 'Hero Section');
+                    trackNavigation('Register', 'Home Hero');
+                  }}
+                  className="bg-emerald-700 hover:bg-emerald-800 text-white px-8 py-4 rounded-lg text-lg font-semibold shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-1 text-center"
+                >
                   শেখা শুরু করুন
                 </Link>
-                <Link href="/syllabus" className="bg-white/90 hover:bg-white text-emerald-900 px-8 py-4 rounded-lg text-lg font-semibold shadow-lg hover:shadow-xl transition-all border-2 border-emerald-700/20 text-center">
+                <Link 
+                  href="/syllabus" 
+                  onClick={() => {
+                    trackButtonClick('সিলেবাস দেখুন', 'Hero Section');
+                    trackNavigation('Syllabus', 'Home Hero');
+                  }}
+                  className="bg-white/90 hover:bg-white text-emerald-900 px-8 py-4 rounded-lg text-lg font-semibold shadow-lg hover:shadow-xl transition-all border-2 border-emerald-700/20 text-center"
+                >
                   সিলেবাস দেখুন
                 </Link>
               </div>

@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useState } from 'react';
+import { trackNavigation } from '@/lib/analytics';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,23 +28,24 @@ export default function Navbar() {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link href="/" className="text-gray-700 hover:text-emerald-700 font-medium transition-colors">
+            <Link href="/" onClick={() => trackNavigation('Home', 'Navbar')} className="text-gray-700 hover:text-emerald-700 font-medium transition-colors">
               হোম
             </Link>
-            <Link href="/syllabus" className="text-gray-700 hover:text-emerald-700 font-medium transition-colors">
+            <Link href="/syllabus" onClick={() => trackNavigation('Syllabus', 'Navbar')} className="text-gray-700 hover:text-emerald-700 font-medium transition-colors">
               সিলেবাস
             </Link>
-            <Link href="/teachers" className="text-gray-700 hover:text-emerald-700 font-medium transition-colors">
+            <Link href="/teachers" onClick={() => trackNavigation('Teachers', 'Navbar')} className="text-gray-700 hover:text-emerald-700 font-medium transition-colors">
               শিক্ষকবৃন্দ
             </Link>
-            <Link href="/about" className="text-gray-700 hover:text-emerald-700 font-medium transition-colors">
+            <Link href="/about" onClick={() => trackNavigation('About', 'Navbar')} className="text-gray-700 hover:text-emerald-700 font-medium transition-colors">
               সম্পর্কে
             </Link>
-            <Link href="/contact" className="text-gray-700 hover:text-emerald-700 font-medium transition-colors">
+            <Link href="/contact" onClick={() => trackNavigation('Contact', 'Navbar')} className="text-gray-700 hover:text-emerald-700 font-medium transition-colors">
               যোগাযোগ
             </Link>
             <Link 
-              href="/register" 
+              href="/register"
+              onClick={() => trackNavigation('Register', 'Navbar Button')}
               className="bg-emerald-700 hover:bg-emerald-800 text-white px-6 py-2.5 rounded-lg font-semibold transition-all shadow-md hover:shadow-lg"
             >
               রেজিস্ট্রেশন
@@ -80,12 +82,62 @@ export default function Navbar() {
             <Link 
               href="/" 
               className="block text-gray-700 hover:text-emerald-700 font-medium py-2 px-4 rounded-lg hover:bg-gray-50 transition-colors"
-              onClick={() => setIsOpen(false)}
+              onClick={() => {
+                trackNavigation('Home', 'Mobile Menu');
+                setIsOpen(false);
+              }}
             >
               হোম
             </Link>
             <Link 
-              href="/syllabus" 
+              href="/syllabus"
+              className="block text-gray-700 hover:text-emerald-700 font-medium py-2 px-4 rounded-lg hover:bg-gray-50 transition-colors"
+              onClick={() => {
+                trackNavigation('Syllabus', 'Mobile Menu');
+                setIsOpen(false);
+              }}
+            >
+              সিলেবাস
+            </Link>
+            <Link 
+              href="/teachers"
+              className="block text-gray-700 hover:text-emerald-700 font-medium py-2 px-4 rounded-lg hover:bg-gray-50 transition-colors"
+              onClick={() => {
+                trackNavigation('Teachers', 'Mobile Menu');
+                setIsOpen(false);
+              }}
+            >
+              শিক্ষকবৃন্দ
+            </Link>
+            <Link 
+              href="/about"
+              className="block text-gray-700 hover:text-emerald-700 font-medium py-2 px-4 rounded-lg hover:bg-gray-50 transition-colors"
+              onClick={() => {
+                trackNavigation('About', 'Mobile Menu');
+                setIsOpen(false);
+              }}
+            >
+              সম্পর্কে
+            </Link>
+            <Link 
+              href="/contact"
+              className="block text-gray-700 hover:text-emerald-700 font-medium py-2 px-4 rounded-lg hover:bg-gray-50 transition-colors"
+              onClick={() => {
+                trackNavigation('Contact', 'Mobile Menu');
+                setIsOpen(false);
+              }}
+            >
+              যোগাযোগ
+            </Link>
+            <Link 
+              href="/register"
+              className="block bg-emerald-700 hover:bg-emerald-800 text-white px-4 py-3 rounded-lg font-semibold transition-all text-center"
+              onClick={() => {
+                trackNavigation('Register', 'Mobile Menu Button');
+                setIsOpen(false);
+              }}
+            >
+              রেজিস্ট্রেশন 
               className="block text-gray-700 hover:text-emerald-700 font-medium py-2 px-4 rounded-lg hover:bg-gray-50 transition-colors"
               onClick={() => setIsOpen(false)}
             >
