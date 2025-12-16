@@ -317,7 +317,7 @@ export default function RegisterPage() {
                         </div>
                         <div className="flex items-start gap-2">
                           <span className="text-amber-700 mt-1">🔥</span>
-                          <p className="text-amber-900 text-sm">ফাইনাল পরীক্ষায় স্ট্যান্ডার্ড নম্বর পেলে ফি ফেরত (প্রথম ১০ জন)</p>
+                          <p className="text-amber-900 text-sm">প্রথম ১০ জনকে ১ মাসের ফি সম্পূর্ণ ফেরত</p>
                         </div>
                       </div>
 
