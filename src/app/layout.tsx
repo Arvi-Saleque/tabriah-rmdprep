@@ -1,3 +1,4 @@
+import { GoogleAnalytics } from '@next/third-parties/google'
 import type { Metadata } from "next";
 import { Noto_Sans_Bengali, Noto_Naskh_Arabic } from 'next/font/google';
 import LoadingScreen from '@/components/LoadingScreen';
@@ -36,6 +37,7 @@ export default function RootLayout({
       <body className={`${notoSansBengali.variable} ${notoNaskhArabic.variable} font-bangla antialiased`}>
         <LoadingScreen />
         {children}
+        <GoogleAnalytics gaId="G-E7772SZ5HK" />
       </body>
     </html>
   );
