@@ -51,9 +51,11 @@ export default function AboutPage() {
             {/* Course Fee */}
             <div className="bg-gradient-to-br from-amber-400 to-amber-600 rounded-2xl shadow-2xl p-8 md:p-12 mb-12 text-white text-center">
               <div className="inline-block bg-white/20 backdrop-blur-sm rounded-full px-8 py-3 mb-4">
-                <p className="text-4xl md:text-5xl font-bold">৪৯৯ টাকা/মাস</p>
+                <p className="text-4xl md:text-5xl font-bold">
+                  <span className="line-through opacity-60">২৯৯</span> <span className="text-white">১৯৯</span> টাকা/মাস
+                </p>
               </div>
-              <p className="text-xl md:text-2xl text-amber-50 mb-4">মাত্র ৪৯৯ টাকা মাসিক ফি তে সম্পূর্ণ কোর্স</p>
+              <p className="text-xl md:text-2xl text-amber-50 mb-4">মাত্র ১৯৯ টাকা মাসিক ফি তে সম্পূর্ণ কোর্স</p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <div className="flex items-center gap-2">
                   <span className="text-2xl">🏆</span>

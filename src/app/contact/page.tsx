@@ -111,7 +111,7 @@ export default function ContactPage() {
               <div className="space-y-6">
                 <div className="border-l-4 border-emerald-700 pl-6 py-2">
                   <h4 className="font-bold text-gray-900 mb-2">কোর্স ফি কত?</h4>
-                  <p className="text-gray-700">কোর্স ফি মাত্র <strong className="text-emerald-700">৪৯৯ টাকা/মাস</strong> (মোট ২ মাস = ৯৯৯ টাকা)। ফাইনাল পরীক্ষায় ভালো নম্বর পেলে ১ মাসের ফি ফেরত পাবেন।</p>
+                  <p className="text-gray-700">কোর্স ফি মাত্র <strong className="text-emerald-700"><span className="line-through opacity-60">২৯৯</span> ১৯৯ টাকা/মাস</strong> (মোট ২ মাস = ৩৯৮ টাকা)। প্রথম ১০ জন ফাইনাল পরীক্ষায় ভালো নম্বর পেলে ১ মাসের ফি ফেরত পাবেন।</p>
                 </div>
                 <div className="border-l-4 border-emerald-700 pl-6 py-2">
                   <h4 className="font-bold text-gray-900 mb-2">কিভাবে পেমেন্ট করব?</h4>

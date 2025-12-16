@@ -305,17 +305,19 @@ export default function RegisterPage() {
                     <h3 className="text-2xl font-bold text-gray-900 mb-6">পেমেন্ট তথ্য</h3>
                     
                     <div className="bg-amber-50 border-2 border-amber-200 rounded-xl p-6 mb-6">
-                      <p className="text-amber-900 font-semibold mb-4 text-lg">৪৯৯ টাকা/মাস</p>
-                      <p className="text-amber-800 text-sm mb-4">২ মাস = ৯৯৯ টাকা</p>
+                      <p className="text-amber-900 font-semibold mb-4 text-lg">
+                        <span className="line-through opacity-60">২৯৯</span> <span className="text-emerald-700 font-bold">১৯৯</span> টাকা/মাস
+                      </p>
+                      <p className="text-amber-800 text-sm mb-4">২ মাস = ৩৯৮ টাকা</p>
                       
                       <div className="space-y-3 mb-6">
                         <div className="flex items-start gap-2">
                           <span className="text-amber-700 mt-1">🏆</span>
-                          <p className="text-amber-900 text-sm">টপ ৩ জনের জন্য বিশেষ পুরস্কার</p>
+                          <p className="text-amber-900 text-sm">টপ ৩ জনের জন্য বিশেষ পুরস্কার (প্রথম ৩ জন)</p>
                         </div>
                         <div className="flex items-start gap-2">
                           <span className="text-amber-700 mt-1">🔥</span>
-                          <p className="text-amber-900 text-sm">ফাইনাল পরীক্ষায় স্ট্যান্ডার্ড নম্বর পেলে ফি ফেরত</p>
+                          <p className="text-amber-900 text-sm">ফাইনাল পরীক্ষায় স্ট্যান্ডার্ড নম্বর পেলে ফি ফেরত (প্রথম ১০ জন)</p>
                         </div>
                       </div>
 
