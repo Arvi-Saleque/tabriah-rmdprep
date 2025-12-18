@@ -99,23 +99,6 @@ export default function TeachersPage() {
                       ))}
                     </div>
                   </div>
-
-                  {/* Certificate */}
-                  <div className="mt-6 border-t pt-6">
-                    <h4 className="font-bold text-gray-900 text-lg mb-4 flex items-center gap-2">
-                      <span>📜</span>
-                      সার্টিফিকেট
-                    </h4>
-                    <div className="rounded-lg overflow-hidden shadow-lg border-2 border-emerald-200">
-                      <Image
-                        src="/images/certificate.jpg"
-                        alt="সালেক বিন হোসেন - সার্টিফিকেট"
-                        width={800}
-                        height={600}
-                        className="w-full h-auto object-contain bg-gray-50"
-                      />
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>

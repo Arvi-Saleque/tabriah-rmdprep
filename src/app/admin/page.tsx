@@ -476,6 +476,36 @@ export default function AdminPage() {
                 />
               </div>
 
+              {/* Demo Section */}
+              <div className="bg-amber-50 border-2 border-amber-300 rounded-xl p-4 space-y-4">
+                <h4 className="text-lg font-bold text-amber-800 flex items-center gap-2">
+                  <span>🎬</span>
+                  ডেমো ক্লাস লিংক
+                </h4>
+                
+                <div>
+                  <label className="block text-gray-900 font-semibold mb-2">ডেমো ভিডিও লিংক</label>
+                  <input
+                    type="url"
+                    value={editingClass.demoVideoLink || ''}
+                    onChange={(e) => handleChange('demoVideoLink', e.target.value)}
+                    className="w-full px-4 py-2 border-2 border-gray-300 rounded-lg focus:border-emerald-700 outline-none"
+                    placeholder="https://youtube.com/..."
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-gray-900 font-semibold mb-2">ডেমো রিসোর্স লিংক</label>
+                  <input
+                    type="url"
+                    value={editingClass.demoResourceLink || ''}
+                    onChange={(e) => handleChange('demoResourceLink', e.target.value)}
+                    className="w-full px-4 py-2 border-2 border-gray-300 rounded-lg focus:border-emerald-700 outline-none"
+                    placeholder="https://drive.google.com/..."
+                  />
+                </div>
+              </div>
+
               <div>
                 <label className="block text-gray-900 font-semibold mb-2">হরফ</label>
                 <input
