@@ -181,7 +181,7 @@ export default function Home() {
             <h3 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">
               পুরস্কার ও সুবিধা
             </h3>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
               {/* Top 3 Prize */}
               <div className="bg-gradient-to-br from-amber-400 to-amber-600 rounded-2xl p-6 shadow-2xl text-white text-center transform hover:scale-105 transition-all">
                 <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto mb-4">
@@ -198,15 +198,6 @@ export default function Home() {
                 </div>
                 <h4 className="text-2xl font-bold mb-3">ফি ফেরত</h4>
                 <p className="text-emerald-50">প্রথম ১০ জনকে ১ মাসের ফি সম্পূর্ণ ফেরত</p>
-              </div>
-
-              {/* Certificate */}
-              <div className="bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl p-6 shadow-2xl text-white text-center transform hover:scale-105 transition-all">
-                <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-4xl">📜</span>
-                </div>
-                <h4 className="text-2xl font-bold mb-3">সার্টিফিকেট</h4>
-                <p className="text-blue-50">কোর্স সম্পন্নকারী সকল শিক্ষার্থীকে সার্টিফিকেট প্রদান</p>
               </div>
             </div>
 

@@ -5,8 +5,6 @@ export interface IClassData {
   date?: string;
   videoLink?: string;
   resourceLink?: string;
-  demoVideoLink?: string;
-  demoResourceLink?: string;
   topics: {
     harf: string;
     prayers: string[];
@@ -29,14 +27,6 @@ const ClassDataSchema = new Schema<IClassData>({
     default: '',
   },
   resourceLink: {
-    type: String,
-    default: '',
-  },
-  demoVideoLink: {
-    type: String,
-    default: '',
-  },
-  demoResourceLink: {
     type: String,
     default: '',
   },

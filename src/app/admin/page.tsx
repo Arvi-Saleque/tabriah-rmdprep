@@ -9,8 +9,6 @@ interface ClassData {
   date?: string;
   videoLink?: string;
   resourceLink?: string;
-  demoVideoLink?: string;
-  demoResourceLink?: string;
   topics: {
     harf: string;
     prayers: string[];
@@ -294,7 +292,7 @@ export default function AdminPage() {
                       <div className="p-6">
                         <div className="flex items-center justify-between mb-4">
                           <h3 className="text-2xl font-bold text-gray-900">
-                            ক্লাস {classItem.classNumber}
+                            {classItem.classNumber === 0 ? 'ডেমো ক্লাস' : `ক্লাস ${classItem.classNumber}`}
                           </h3>
                           <button
                             onClick={() => handleEdit(classItem)}
@@ -433,7 +431,9 @@ export default function AdminPage() {
         <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
           <div className="bg-white rounded-2xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
             <div className="bg-emerald-700 text-white p-6 flex justify-between items-center">
-              <h3 className="text-2xl font-bold">ক্লাস {editingClass.classNumber} এডিট করুন</h3>
+              <h3 className="text-2xl font-bold">
+                {editingClass.classNumber === 0 ? 'ডেমো ক্লাস' : `ক্লাস ${editingClass.classNumber}`} এডিট করুন
+              </h3>
               <button
                 onClick={() => setEditingClass(null)}
                 className="text-white hover:bg-white/20 rounded-lg p-2 transition-all"
@@ -476,36 +476,6 @@ export default function AdminPage() {
                   className="w-full px-4 py-2 border-2 border-gray-300 rounded-lg focus:border-emerald-700 outline-none"
                   placeholder="https://drive.google.com/..."
                 />
-              </div>
-
-              {/* Demo Section */}
-              <div className="bg-amber-50 border-2 border-amber-300 rounded-xl p-4 space-y-4">
-                <h4 className="text-lg font-bold text-amber-800 flex items-center gap-2">
-                  <span>🎬</span>
-                  ডেমো ক্লাস লিংক
-                </h4>
-                
-                <div>
-                  <label className="block text-gray-900 font-semibold mb-2">ডেমো ভিডিও লিংক</label>
-                  <input
-                    type="url"
-                    value={editingClass.demoVideoLink || ''}
-                    onChange={(e) => handleChange('demoVideoLink', e.target.value)}
-                    className="w-full px-4 py-2 border-2 border-gray-300 rounded-lg focus:border-emerald-700 outline-none"
-                    placeholder="https://youtube.com/..."
-                  />
-                </div>
-
-                <div>
-                  <label className="block text-gray-900 font-semibold mb-2">ডেমো রিসোর্স লিংক</label>
-                  <input
-                    type="url"
-                    value={editingClass.demoResourceLink || ''}
-                    onChange={(e) => handleChange('demoResourceLink', e.target.value)}
-                    className="w-full px-4 py-2 border-2 border-gray-300 rounded-lg focus:border-emerald-700 outline-none"
-                    placeholder="https://drive.google.com/..."
-                  />
-                </div>
               </div>
 
               <div>

@@ -1,5 +1,5 @@
 import mongoose from 'mongoose';
-import { syllabusData } from '../src/data/syllabusData';
+import { syllabusData } from '../src/data/syllabusData.js';
 
 const MONGODB_URI = 'mongodb+srv://alifsalekas_db_user:ui7f2hGrjINXHFFN@dha-cluster.pcvzzmx.mongodb.net/ramadan-prep';
 

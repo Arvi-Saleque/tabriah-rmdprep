@@ -8,8 +8,6 @@ interface ClassData {
   date?: string;
   videoLink?: string;
   resourceLink?: string;
-  demoVideoLink?: string;
-  demoResourceLink?: string;
   topics: {
     harf: string;
     prayers: string[];
@@ -69,7 +67,7 @@ export default function SyllabusPage() {
           <div className="text-center text-white max-w-3xl mx-auto">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">কোর্স সিলেবাস</h1>
             <p className="text-lg md:text-xl text-emerald-100">
-              ১৫টি ক্লাসে সম্পূর্ণ নামাজ, সূরা এবং দৈনন্দিন দোয়া শিখুন
+              ১৫টি ক্লাসে সম্পূর্ণ নামাজ, সূরা এবং দৈনন্দিন দোয়া শিখুন (ডেমো ক্লাস সহ)
             </p>
             <div className="flex justify-center gap-6 mt-6">
               <div className="text-center">
@@ -99,58 +97,6 @@ export default function SyllabusPage() {
             </div>
           ) : (
             <div className="max-w-5xl mx-auto space-y-6">
-              {/* Demo Section */}
-              {syllabusData.length > 0 && syllabusData[0].demoVideoLink && (
-                <div className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-xl shadow-lg border-2 border-amber-400 overflow-hidden mb-8">
-                  <div className="bg-gradient-to-r from-amber-500 to-orange-500 p-6">
-                    <div className="flex items-center gap-4">
-                      <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center">
-                        <span className="text-white text-3xl">🎬</span>
-                      </div>
-                      <div>
-                        <h3 className="text-2xl font-bold text-white">ডেমো ক্লাস</h3>
-                        <p className="text-amber-100">কোর্সের একটি নমুনা দেখুন</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="p-6">
-                    <div className="flex gap-4 flex-wrap">
-                      {syllabusData[0].demoVideoLink && (
-                        <button
-                          onClick={() => {
-                            if (syllabusData[0].demoVideoLink) {
-                              window.open(syllabusData[0].demoVideoLink, '_blank');
-                            }
-                          }}
-                          className="flex-1 min-w-[200px] bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white px-6 py-3 rounded-lg font-semibold transition-all shadow-md hover:shadow-xl flex items-center justify-center gap-2"
-                        >
-                          <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
-                            <path fillRule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clipRule="evenodd" />
-                          </svg>
-                          ডেমো ভিডিও দেখুন
-                        </button>
-                      )}
-                      {syllabusData[0].demoResourceLink && (
-                        <button
-                          onClick={() => {
-                            if (syllabusData[0].demoResourceLink) {
-                              window.open(syllabusData[0].demoResourceLink, '_blank');
-                            }
-                          }}
-                          className="flex-1 min-w-[200px] bg-gradient-to-r from-emerald-600 to-emerald-700 hover:from-emerald-700 hover:to-emerald-800 text-white px-6 py-3 rounded-lg font-semibold transition-all shadow-md hover:shadow-xl flex items-center justify-center gap-2"
-                        >
-                          <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                            <path fillRule="evenodd" d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V7.414A2 2 0 0015.414 6L12 2.586A2 2 0 0010.586 2H6zm5 6a1 1 0 10-2 0v3.586l-1.293-1.293a1 1 0 10-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 11.586V8z" clipRule="evenodd" />
-                          </svg>
-                          ডেমো রিসোর্স
-                        </button>
-                      )}
-                    </div>
-                  </div>
-                </div>
-              )}
-
             {syllabusData.map((classItem, index) => (
               <div
                 key={classItem.classNumber}
@@ -166,7 +112,7 @@ export default function SyllabusPage() {
                       </div>
                       <div>
                         <h3 className="text-2xl font-bold text-gray-900">
-                          ক্লাস {classItem.classNumber}
+                          {classItem.classNumber === 0 ? 'ডেমো ক্লাস' : `ক্লাস ${classItem.classNumber}`}
                         </h3>
                         {classItem.classNumber === 16 ? (
                           <p className="text-emerald-700 font-semibold">চূড়ান্ত পরীক্ষা</p>

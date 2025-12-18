@@ -4,8 +4,6 @@ export interface ClassData {
   date: string;
   videoLink?: string;
   resourceLink?: string;
-  demoVideoLink?: string;
-  demoResourceLink?: string;
   topics: {
     harf: string;
     prayers: string[];
@@ -14,6 +12,17 @@ export interface ClassData {
 }
 
 export const syllabusData: ClassData[] = [
+  {
+    classNumber: 0,
+    date: "ডেমো ক্লাস",
+    videoLink: "",
+    resourceLink: "",
+    topics: {
+      harf: "কোর্স পরিচিতি",
+      prayers: ["কোর্সের সংক্ষিপ্ত বিবরণ"],
+      dua: "কোর্স সম্পর্কিত তথ্য"
+    }
+  },
   {
     classNumber: 1,
     date: "২৪ জানুয়ারি, ২০২৫",
