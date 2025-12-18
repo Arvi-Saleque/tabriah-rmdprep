@@ -4,6 +4,8 @@ export interface ClassData {
   date: string;
   videoLink?: string;
   resourceLink?: string;
+  demoVideoLink?: string;
+  demoResourceLink?: string;
   topics: {
     harf: string;
     prayers: string[];
